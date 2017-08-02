@@ -16,3 +16,11 @@ Route::get('/', function () {
 });
 
 Route::get('/index', 'TaskController@index');
+
+Route::get('/book','TaskController@showBook');
+
+Route::get('/book/insertBook', 'TaskController@formInsertBook');
+
+Route::post('/book/insertBook', 'TaskController@insertBook');
+
+Route::get('/book/delete','TaskController@deleteBook');
